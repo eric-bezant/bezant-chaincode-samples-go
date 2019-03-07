@@ -1,15 +1,15 @@
 # `Go Chaincode` simple code
-This tutorial will explain how to write `Hyperledger Fabric` chain code based on `Go`
+This guide will walk you through to write `Hyperledger Fabric` chaincode based on `Go`
 
 # Environment
 + `Go`
 + `Hyperledger Fabric`
 
 
-# `Chaincode` development example
-Writing your own chain code requires an understanding of the `Fabric` platform, `Go`. An application is a basic example chain code that creates assets (key-value pairs) on a ledger.
+# `Chaincode` Development Example
+Writing your own chain code requires an understanding of the `Fabric` platform and also`Go`. An application is a basic example chaincode that creates assets (key-value pairs) on a ledger.
 
-## Download code
+## Download Code
 ```sh
 $ git clone https://github.com/bezant-developers/bezant-chaincode-samples-go.git
 ```
@@ -45,7 +45,7 @@ func main() {
 ```
 
 ## Function
-Init is called during chaincode instantiation to initialize and chaincode upgrade also calls this function.
+Init is called during chaincode instantiation to initialize and also chaincode upgrade calls this function as well.
 ```go
 func (t *SimpleChaincode) Init(stub shim.ChaincodeStubInterface) pb.Response {
 	fmt.Println("========= Init =========")
